@@ -1,33 +1,21 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+/* @import "./slytes/theme.less"; */
+@primary-color: #1890ff;                          
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.sider-blur{
+  -webkit-backdrop-filter: blur(10px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mb-10{
+  margin-bottom: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+media-grid{display:flex;flex-wrap:wrap;width:100%;padding:10px}
+media-grid>.media-grid-item{padding:10px;flex:0 0 50%;width:50%;overflow:hidden}
+@media only screen and (min-width:768px){media-grid>.media-grid-item{flex:0 0 33.33333333%;width:33.33333333%}}
+@media only screen and (min-width:1200px){media-grid>.media-grid-item{flex:0 0 25%;width:25%}}
+@media only screen and (min-width:1600px){media-grid>.media-grid-item{flex:0 0 20%;width:20%}}
+media-grid>.media-grid-item>.img-container{width:100%;padding-top:100%;position:relative}
+media-grid>.media-grid-item>.img-container>img{position:absolute;top:0;left:0;right:0;bottom:0} 
